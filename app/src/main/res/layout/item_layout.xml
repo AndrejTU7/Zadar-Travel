@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                android:id="@+id/zadar"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/zadar_img"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:transitionName="transitionName"
+        android:paddingTop="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="16dp"/>
+    <TextView
+        android:id="@+id/zadar_naziv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/zadar_img"
+        android:layout_toEndOf="@+id/zadar_img"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"/>/>
+<ImageView
+    android:id="@+id/zadar_zvjezdice"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@android:color/black"
+    android:layout_below="@+id/zadar_naziv"
+    android:layout_toRightOf="@+id/zadar_img"
+    android:layout_toEndOf="@+id/zadar_img"
+    android:paddingLeft="8dp"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/zadar_brojlezajeva"
+    android:layout_below="@+id/zadar_zvjezdice"
+    android:layout_toRightOf="@+id/zadar_img"
+    android:layout_toEndOf="@+id/zadar_img"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zadar_odmora"
+        android:layout_below="@+id/zadar_zvjezdice"
+        android:layout_toRightOf="@+id/zadar_brojlezajeva"/>
+</RelativeLayout>
